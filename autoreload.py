@@ -49,3 +49,7 @@ def start(check_time=500):
     callback = functools.partial(_reload_on_update, modify_times)
     scheduler = ioloop.PeriodicCallback(callback, check_time)
     scheduler.start()
+
+
+def _reload_on_update():
+    pass
